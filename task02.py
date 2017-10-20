@@ -14,5 +14,11 @@ for forecasts in area.forecast():
         newlist.append(forecasts['low'])
         days.append(newlist)
         x=x+1
-print (days)
-
+high=0
+for y in days:
+    if int(y[2])>int(high):
+        high=y[2]
+        d = y[1]
+        
+print("The day with highest temp. "+d+' and the temp is '+ high)
+       
