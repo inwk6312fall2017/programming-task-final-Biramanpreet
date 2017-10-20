@@ -21,4 +21,10 @@ for y in days:
         d = y[1]
         
 print("The day with highest temp. "+d+' and the temp is '+ high)
-       
+
+least=88000       
+for y in days:
+    if int(y[3])>int(least):
+        least=y[3]
+        e = y[1]
+print("The day with lowest temp. "+e+' and the temp is '+ least)
